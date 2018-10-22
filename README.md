@@ -1,8 +1,7 @@
 # Citibike Analytics
 An analytical dashboard of Citi Bike trips in 2017.
 
-![] (
-
+![](citi-bike-station-bikes.jpg)
 
 ##### Development Requirements
 * Pandas
