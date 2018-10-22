@@ -14,7 +14,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='allcitybike2016' name='textscan.1pohf1o1yrwyuc125d2501va24qm'>
-            <connection class='textscan' directory='C:/Users/Nii/Homework/CitiBike_analytics_dashboard/data' filename='allcitybike2016.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Nii/Homework/CitiBike_analytics/data' filename='allcitybike2016.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.1pohf1o1yrwyuc125d2501va24qm' name='allcitybike2017.csv' table='[allcitybike2017#csv]' type='table'>
@@ -270,12 +270,11 @@
       <column caption='Stoptime' datatype='datetime' name='[stoptime]' role='dimension' type='ordinal' />
       <column caption='Tripduration' datatype='integer' name='[tripduration]' role='measure' type='quantitative' />
       <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
-      <column-instance column='[start station name]' derivation='CountD' name='[ctd:start station name:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_1507861504000770050]' derivation='None' name='[none:Calculation_1507861504000770050:nk]' pivot='key' type='nominal' />
       <column-instance column='[end station name]' derivation='None' name='[none:end station name:nk]' pivot='key' type='nominal' />
       <column-instance column='[start station name]' derivation='None' name='[none:start station name:nk]' pivot='key' type='nominal' />
       <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.549793' measure-ordering='alphabetic' measure-percentage='0.450207' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.552408' measure-ordering='alphabetic' measure-percentage='0.447592' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[none:usertype:nk]' type='palette'>
@@ -885,173 +884,6 @@
             </map>
             <map to='#ffbeb2'>
               <bucket>&quot;5 Corners Library&quot;</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[ctd:start station name:qk]' palette='blue_10_0' type='palette'>
-            <map to='#2a5783'>
-              <bucket>&quot;JCBS Depot&quot;</bucket>
-            </map>
-            <map to='#2c5985'>
-              <bucket>&quot;Bethune Center&quot;</bucket>
-            </map>
-            <map to='#2e5b88'>
-              <bucket>&quot;Bayside Park&quot;</bucket>
-            </map>
-            <map to='#315e8a'>
-              <bucket>&quot;Danforth Light Rail&quot;</bucket>
-            </map>
-            <map to='#33608d'>
-              <bucket>&quot;MLK Light Rail&quot;</bucket>
-            </map>
-            <map to='#36638f'>
-              <bucket>&quot;Columbia Park&quot;</bucket>
-            </map>
-            <map to='#386592'>
-              <bucket>&quot;West Side Light Rail&quot;</bucket>
-            </map>
-            <map to='#3a6794'>
-              <bucket>&quot;NJCU&quot;</bucket>
-            </map>
-            <map to='#3c6997'>
-              <bucket>&quot;Union St&quot;</bucket>
-            </map>
-            <map to='#3e6c99'>
-              <bucket>&quot;Journal Square&quot;</bucket>
-            </map>
-            <map to='#406e9c'>
-              <bucket>&quot;North St&quot;</bucket>
-            </map>
-            <map to='#42709e'>
-              <bucket>&quot;Central Ave&quot;</bucket>
-            </map>
-            <map to='#4472a0'>
-              <bucket>&quot;Communipaw &amp; Berry Lane&quot;</bucket>
-            </map>
-            <map to='#4675a3'>
-              <bucket>&quot;York St&quot;</bucket>
-            </map>
-            <map to='#4777a5'>
-              <bucket>&quot;Garfield Ave Station&quot;</bucket>
-            </map>
-            <map to='#497aa8'>
-              <bucket>&quot;Washington St&quot;</bucket>
-            </map>
-            <map to='#4b7caa'>
-              <bucket>&quot;Dey St&quot;</bucket>
-            </map>
-            <map to='#4d7eac'>
-              <bucket>&quot;Leonard Gordon Park&quot;</bucket>
-            </map>
-            <map to='#5081ae'>
-              <bucket>&quot;Riverview Park&quot;</bucket>
-            </map>
-            <map to='#5283b0'>
-              <bucket>&quot;Heights Elevator&quot;</bucket>
-            </map>
-            <map to='#5586b2'>
-              <bucket>&quot;Harborside&quot;</bucket>
-            </map>
-            <map to='#5788b4'>
-              <bucket>&quot;5 Corners Library&quot;</bucket>
-            </map>
-            <map to='#5a8bb6'>
-              <bucket>&quot;Astor Place&quot;</bucket>
-            </map>
-            <map to='#5c8db8'>
-              <bucket>&quot;Lafayette Park&quot;</bucket>
-            </map>
-            <map to='#5f90ba'>
-              <bucket>&quot;Lincoln Park&quot;</bucket>
-            </map>
-            <map to='#6192bc'>
-              <bucket>&quot;Christ Hospital&quot;</bucket>
-            </map>
-            <map to='#6495be'>
-              <bucket>&quot;Hilltop&quot;</bucket>
-            </map>
-            <map to='#6798c1'>
-              <bucket>&quot;Pershing Field&quot;</bucket>
-            </map>
-            <map to='#699ac3'>
-              <bucket>&quot;Baldwin at Montgomery&quot;</bucket>
-            </map>
-            <map to='#6c9dc5'>
-              <bucket>&quot;Oakland Ave&quot;</bucket>
-            </map>
-            <map to='#6e9fc7'>
-              <bucket>&quot;Manila &amp; 1st&quot;</bucket>
-            </map>
-            <map to='#71a2c9'>
-              <bucket>&quot;Monmouth and 6th&quot;</bucket>
-            </map>
-            <map to='#73a4cb'>
-              <bucket>&quot;Dixon Mills&quot;</bucket>
-            </map>
-            <map to='#76a7cd'>
-              <bucket>&quot;JC Medical Center&quot;</bucket>
-            </map>
-            <map to='#79a9cf'>
-              <bucket>&quot;McGinley Square&quot;</bucket>
-            </map>
-            <map to='#7bacd1'>
-              <bucket>&quot;Brunswick &amp; 6th&quot;</bucket>
-            </map>
-            <map to='#7eaed3'>
-              <bucket>&quot;Liberty Light Rail&quot;</bucket>
-            </map>
-            <map to='#80b1d5'>
-              <bucket>&quot;Jersey &amp; 6th St&quot;</bucket>
-            </map>
-            <map to='#83b3d7'>
-              <bucket>&quot;Columbus Drive&quot;</bucket>
-            </map>
-            <map to='#86b6d9'>
-              <bucket>&quot;Jersey &amp; 3rd&quot;</bucket>
-            </map>
-            <map to='#89b9db'>
-              <bucket>&quot;Brunswick St&quot;</bucket>
-            </map>
-            <map to='#8dbbdc'>
-              <bucket>&quot;Essex Light Rail&quot;</bucket>
-            </map>
-            <map to='#90bede'>
-              <bucket>&quot;Marin Light Rail&quot;</bucket>
-            </map>
-            <map to='#93c1e0'>
-              <bucket>&quot;Paulus Hook&quot;</bucket>
-            </map>
-            <map to='#96c4e2'>
-              <bucket>&quot;City Hall&quot;</bucket>
-            </map>
-            <map to='#9ac6e4'>
-              <bucket>&quot;Newport Pkwy&quot;</bucket>
-            </map>
-            <map to='#9dc9e5'>
-              <bucket>&quot;Newark Ave&quot;</bucket>
-            </map>
-            <map to='#a0cbe7'>
-              <bucket>&quot;Van Vorst Park&quot;</bucket>
-            </map>
-            <map to='#a4cee9'>
-              <bucket>&quot;Warren St&quot;</bucket>
-            </map>
-            <map to='#a7d0ea'>
-              <bucket>&quot;Morris Canal&quot;</bucket>
-            </map>
-            <map to='#aad3eb'>
-              <bucket>&quot;Newport PATH&quot;</bucket>
-            </map>
-            <map to='#aed5ed'>
-              <bucket>&quot;Sip Ave&quot;</bucket>
-            </map>
-            <map to='#b1d8ee'>
-              <bucket>&quot;Exchange Place&quot;</bucket>
-            </map>
-            <map to='#b5daef'>
-              <bucket>&quot;Hamilton Park&quot;</bucket>
-            </map>
-            <map to='#b9ddf1'>
-              <bucket>&quot;Grove St PATH&quot;</bucket>
             </map>
           </encoding>
           <encoding attr='color' field='[none:Calculation_1507861504000770050:nk]' type='palette'>
@@ -3202,7 +3034,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' name='Number of Trips'>
+    <window class='worksheet' maximized='true' name='Number of Trips'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3797,7 +3629,7 @@
         <default-map-tool-selection tool='1' />
       </viewpoint>
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='All Bike rides - Peak hrs '>
           <zoom type='entire-view' />
